@@ -361,7 +361,12 @@ def save_data_uji():
         (12, 66, 83, 95, 57, 100, 50, 98, 95, "Dibawah Rata-rata", "Visual", "ISTJ", "Ekonomi", "Sosiologi", "Sejarah"),
         (13, 96, 72, 73, 89, 75, 96, 79, 72, "Rata-rata", "Kinestetik", "ESFJ", "Biologi", "Kimia", "Sosiologi"),
         (14, 68, 65, 96, 84, 71, 80, 66, 92, "Rata-rata", "Auditori", "ESTJ", "Ekonomi", "Sosiologi", "Matematika"),
-        (15, 77, 97, 69, 94, 96, 66, 58, 63, "Sangat Rendah", "Kinestetik", "ENFJ", "Biologi", "Bahasa Asing", "Informatika")
+        (15, 77, 97, 69, 94, 96, 66, 58, 63, "Sangat Rendah", "Kinestetik", "ENFJ", "Biologi", "Bahasa Asing", "Informatika"),
+        (16, 97, 72, 67, 82, 100, 81, 63, 93, "Dibawah Rata-rata", "Visual", "ESTP", "Antropologi", "Sosiologi", "Ekonomi"),
+        (17, 75, 97, 71, 58, 84, 78, 89, 75, "Rata-rata", "Kinestetik", "ESFP", "Ekonomi", "Sosiologi", "Geografi"),
+        (18, 69, 50, 89, 65, 81, 95, 51, 65, "Rata-rata", "Visual", "ENFJ", "Antropologi", "Ekonomi", "Geografi"),
+        (19, 60, 85, 68, 69, 70, 58, 70, 64, "Diatas Rata-rata", "Visual", "ISTJ", "Antropologi", "Sosiologi", "Biologi"),
+        (20, 92, 82, 60, 60, 65, 87, 61, 54, "Rata-rata", "Visual", "ENTJ", "Ekonomi", "Sosiologi", "Geografi")
     ]
 
     query = """
