@@ -383,8 +383,62 @@ def save_data_uji():
 
     conn.mydb.commit()
 
+def remove_all_data():
+    conn = UserDBConnection()
+
+    conn.cursor.execute(
+        """
+        DELETE FROM iq_categories
+        """
+    )
+
+    conn.cursor.execute(
+        """
+        DELETE FROM gaya_belajar_categories
+        """
+    )
+
+    conn.cursor.execute(
+        """
+        DELETE FROM personality_categories
+        """
+    )
+
+    conn.cursor.execute(
+        """
+        DELETE FROM recomendation_categories
+        """
+    )
+
+    conn.cursor.execute(
+        """
+        DELETE FROM data_kotor
+        """
+    )
+
+    conn.cursor.execute(
+        """
+        DELETE FROM data_bersih
+        """
+    )
+
+    conn.cursor.execute(
+        """
+        DELETE FROM data_uji
+        """
+    )
+
+    conn.cursor.execute(
+        """
+        DELETE FROM transformasi
+        """
+    )
+
+    conn.mydb.commit()
 
 def save_all_data():
+
+    remove_all_data()
 
     save_kategori()
     print("Berhasil menyimpan data kategori")

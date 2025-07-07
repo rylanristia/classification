@@ -216,7 +216,7 @@ def klasifikasi(request):
 
     return render(request, "klasifikasi.html")
 
-def knn_predict_raw(data_uji_list, k=5):
+def knn_predict_raw(data_uji_list, k=3):
     conn = UserDBConnection(dictionary=True)
     # Ambil data latih (transformasi)
     conn.cursor.execute("""
