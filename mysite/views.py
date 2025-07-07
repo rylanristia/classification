@@ -68,6 +68,13 @@ def transformasi(request):
     conn = UserDBConnection(dictionary=True)
 
     if request.method == "POST":
+
+        conn.cursor.execute(
+            """
+            DELETE FROM transformasi
+            """
+        )
+
         # Ambil data dari data_bersih
         query = "SELECT * FROM data_bersih"
         conn.cursor.execute(query)
