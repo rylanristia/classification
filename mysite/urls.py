@@ -6,5 +6,7 @@ urlpatterns = [
     path("datakotor/", views.datakotor),
     path("cleansing-result/", views.cleansingResult),
     path("transformasi/", views.transformasi),
-    path('klasifikasi/', views.klasifikasi)
+    path("klasifikasi/", views.klasifikasi),
+    path("add-new-data/", views.addnewdata),
+    path("test-new-data/", views.testnewdata),
 ]
